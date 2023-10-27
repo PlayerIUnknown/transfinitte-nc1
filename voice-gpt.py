@@ -32,14 +32,14 @@ def speak_text (text):
 
 def main():
     while True:
-# Wait for user to say "genius"
-        print("Say 'Genius' to start recording your question...")
+# Wait for user to say "Chainsaw"
+        print("Say 'Chainsaw' to start recording your question...")
         with sr.Microphone () as source:
             recognizer = sr.Recognizer()
             audio = recognizer.listen (source)
             try:
                 transcription = recognizer.recognize_google (audio)
-                if transcription. lower() == "genius":
+                if transcription. lower() == "Chainsaw":
                 # Record audio
                     filename="input.wav"
                     print("Say your question...")
